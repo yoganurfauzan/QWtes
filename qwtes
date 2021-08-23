@@ -1,0 +1,6 @@
+$s = 'abcdefg';
+$temp = '';
+for ($i = 0, $length = mb_strlen($s); $i < $length; $i++) {
+    $temp .= $s{$length - $i - 1};
+}
+var_dump($temp);
